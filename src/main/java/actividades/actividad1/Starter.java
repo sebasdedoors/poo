@@ -1,6 +1,6 @@
 package actividades.actividad1;
 
-import edu.sebastian.rubio.actividades.actividad1.ui.CLI;
+import actividades.actividad1.ui.CLI;
 
 public class Starter {
 

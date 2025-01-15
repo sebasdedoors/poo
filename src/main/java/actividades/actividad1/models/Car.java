@@ -1,6 +1,6 @@
 package actividades.actividad1.models;
 
-public class Estudiante {
+public class Car {
     String nombre;
     String apellido;
 
