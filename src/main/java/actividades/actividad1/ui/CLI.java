@@ -19,7 +19,7 @@ public static void runApp() {
             int numeroPuertas = scanner.nextInt(); scanner.nextLine();
             System.out.println("Introduce el color");
             String color = scanner.nextLine();
-            System.out.println("Introduce la modelo");
+            System.out.println("Introduce el modelo");
             String modelo = scanner.nextLine();
             System.out.println("Introduce la marca");
             String marca = scanner.nextLine();
