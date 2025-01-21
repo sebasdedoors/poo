@@ -1,11 +1,19 @@
 package actividades.actividad1.models;
 
+/***
+ * La clase contiene los atributos de un carro.
+ * El número de puerteas debe estar entre 2 y 5 y se encuentra en tipo "int".
+ */
+
 public class Car {
     private String modelo;
     private String marca;
     private String color;
     private int numeroPuertas;
 
+    /***
+     * Se encarga de mostrar los atributos del carro. 
+     */
 
     public String toString(){
         return "Car{" +
@@ -15,19 +23,32 @@ public class Car {
                 ", numeroPuertas=" + numeroPuertas +
                 '}';
             }
+        
+        /***
+         * Constructor de la clase Car
+         * @param modelo
+         * @param marca
+         * @param color
+         * @param numeroPuertas
+         */
     
     public Car(String modelo, String marca, String color, int numeroPuertas){
         this.modelo = modelo;
         this.marca = marca;
-        this.numeroPuertas = numeroPuertas;
+        this.numeroPuertas = getNumeroPuertas();
         this.color = color;
+        this.setNumeroPuertas(numeroPuertas);
     }
 
     public int getNumeroPuertas(){
         return numeroPuertas;
     }
     
-
+    /***
+     * 
+     * @param numeroPuertas Aqui se valida que el número de puertas sea mayor a 2 y menor a 5.
+     * @throws IllegalArgumentException Si el número de puertas no está entre 2 y 5, se lanza una excepción.
+     */
 
     public void setNumeroPuertas(int numeroPuertas) {
         if(numeroPuertas < 2 || numeroPuertas > 5){
