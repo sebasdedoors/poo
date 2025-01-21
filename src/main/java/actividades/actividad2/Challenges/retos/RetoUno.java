@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class RetoUno { 
-    public static String reverseString(String input){ /*Es similar al metodo de burbuja en python */
+    public static String reverseString(String input){ /*Es similar al metodo de burbuja en python, coloca la cadena en una lista y la reacomoda en reversa. */
         char[] chars = input.toCharArray();
         String reversed = "";
         for (int i = chars.length - 1; i >= 0; i--){
@@ -13,7 +13,7 @@ public class RetoUno {
         return reversed;
 
     }
-     public static DuplicateCharResult findFirstDuplicateChar(String input) {
+     public static DuplicateCharResult findFirstDuplicateChar(String input) {  /*Revela la posición de la letra repetida dentro de la cadena. */
         Set<Character> seenChars = new HashSet<>();
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
@@ -35,7 +35,7 @@ public class RetoUno {
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args){   /*Aqui se almacena e imprime la cadena al revez. */
         String original = "Hola Mundo";
         String reversed = reverseString(original);
         System.out.println("Original: " + original);
