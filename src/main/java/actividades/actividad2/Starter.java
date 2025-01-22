@@ -4,7 +4,7 @@ import actividades.actividad2.ui.CLI;
 
 public class Starter {
     public static void main(String[] args){
-        //CLI.runApp();
+        CLI.runApp();
         String a = "test";
         String b = "test";
         String b2 = new String("test"); /*El operador "new" se encarga de crear un nuevo objeto en la memoria */
