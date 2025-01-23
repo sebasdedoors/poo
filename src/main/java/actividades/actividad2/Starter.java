@@ -5,9 +5,15 @@ import actividades.actividad2.ui.CLI;
 public class Starter {
     public static void main(String[] args){
         CLI.runApp();
-        String a = "test";
+    }
+}
+
+
+
+
+        /*String a = "test";
         String b = "test";
-        String b2 = new String("test"); /*El operador "new" se encarga de crear un nuevo objeto en la memoria */
+        String b2 = new String("test"); /*El operador "new" se encarga de crear un nuevo objeto en la memoria*$$ 
         String c = "te";
         c += "st";
         String d = "TEST";
@@ -23,4 +29,4 @@ public class Starter {
         System.out.println("a equalsIgnoreCase d: " + (a.equalsIgnoreCase(d)));
     }
 
-}
+}*/
