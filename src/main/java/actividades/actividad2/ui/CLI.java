@@ -7,7 +7,7 @@ import actividades.actividad2.process.NumberGenerator;
 import java.util.Scanner;
 
 public class CLI {
-    public static void showMenu(){
+    public static void showMenu(){ /*Muestra el menú */
         System.out.println("\n**********************************");
         System.out.println("| Menú                           |");
         System.out.println("| 1. Validador de nombres.       |");
@@ -16,11 +16,11 @@ public class CLI {
         System.out.println("**********************************");
     }
 
-    public static void runApp(){
+    public static void runApp(){ /*Se encarga de realizar el codigo dependiendo de la opción del usuario. */
         showMenu();
         Scanner scanner = new Scanner(System.in);
         int opcion = scanner.nextInt();scanner.nextLine();
-        while(opcion != 3){
+        while(opcion != 3){ /*Se encarga de mantener al usuario dentro del código hasta que el quiera salir. */
             switch (opcion){
                 case 1:
                     System.out.println("Introduce un nombre: ");

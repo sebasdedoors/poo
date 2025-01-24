@@ -2,6 +2,8 @@ package actividades.actividad2;
 
 import actividades.actividad2.ui.CLI;
 
+/*La clase se encarga de activar el metodo main y empezará a correr el programa. */
+
 public class Starter {
     public static void main(String[] args){
         CLI.runApp();
