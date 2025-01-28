@@ -21,43 +21,30 @@ public class Productos {
 
     public Productos(String descripcion, String codigo, String tipo, Double costo, Double impuesto){
         this.descripcion = getDescripcion();
-        this.codigo = codigo;
-        this.tipo = tipo;
-        this.costo = costo;
-        this.impuesto = impuesto;
+        this.codigo = getCodigo();
+        this.tipo = getTipo();
+        this.costo = getCosto();
+        this.impuesto = getImpuesto();
     }
 
-    public String getDescripcion(){
-        return descripcion;
-    }
+    public String getDescripcion(){return descripcion;}
 
-    public void setDescripcion(){
-        System.out.println("Por favor, escriba la descripción del producto:");
-        descripcion = scanner.nextLine();
-        this.descripcion = descripcion;
-    }
+    public void setDescripcion(String descripcion){this.descripcion = descripcion;}
 
-    public String getCodigo(){
-        return codigo;
-    }
+    public String getCodigo(){return codigo;}
 
-    public void setCodigo(){
-        System.out.println("Por favor, escriba el codigo del producto:");
-        codigo = scanner.nextLine();
-        this.codigo = codigo;
-        
-    }
+    public void setCodigo(String codigo){this.codigo = codigo;}
 
-    public String getTipo(){
-        return tipo;
-    }
+    public String getTipo(){return tipo;}
 
-    public void setTipo(){
-        System.out.println("Por favor, escriba el tipo del producto:");
-        tipo = scanner.nextLine();
-        this.tipo = tipo;
-    }
+    public void setTipo(String tipo){this.tipo = tipo;}
 
+    public Double getCosto(){return costo;}
 
+    public void setCosto(Double costo){this.costo = costo;}
+
+    public Double getImpuesto(){return impuesto;}
+
+    public void setImpuesto(Double impuesto){this.impuesto = impuesto;}
 }
 
