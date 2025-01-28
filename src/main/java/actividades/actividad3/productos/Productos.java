@@ -8,6 +8,7 @@ public class Productos {
     private String tipo;
     private Double costo;
     private Double impuesto;
+    Scanner scanner = new Scanner(System.in);
 
     public String toString(){
         return "Producto{" + 
@@ -31,7 +32,30 @@ public class Productos {
     }
 
     public void setDescripcion(){
+        System.out.println("Por favor, escriba la descripción del producto:");
+        descripcion = scanner.nextLine();
+        this.descripcion = descripcion;
+    }
 
+    public String getCodigo(){
+        return codigo;
+    }
+
+    public void setCodigo(){
+        System.out.println("Por favor, escriba el codigo del producto:");
+        codigo = scanner.nextLine();
+        this.codigo = codigo;
+        
+    }
+
+    public String getTipo(){
+        return tipo;
+    }
+
+    public void setTipo(){
+        System.out.println("Por favor, escriba el tipo del producto:");
+        tipo = scanner.nextLine();
+        this.tipo = tipo;
     }
 
 
