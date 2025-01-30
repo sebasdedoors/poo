@@ -20,11 +20,12 @@ public class Productos {
     }
 
     public Productos(String descripcion, String codigo, String tipo, Double costo, Double impuesto){
-        this.descripcion = getDescripcion();
-        this.codigo = getCodigo();
-        this.tipo = getTipo();
-        this.costo = getCosto();
-        this.impuesto = getImpuesto();
+        this.descripcion = descripcion;
+        this.codigo = codigo;
+        this.tipo = tipo;
+        this.costo = costo;
+        this.impuesto = impuesto;
+
     }
 
     public String getDescripcion(){return descripcion;}

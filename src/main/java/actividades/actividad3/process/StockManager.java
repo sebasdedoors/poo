@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StockManager {
-    ArrayList<Productos> stock;
+    private ArrayList<Productos> stock;
 
-    public  void muestraProducto(){
+    public StockManager(){
         this.stock = new ArrayList<>();
     }
 
@@ -20,6 +20,14 @@ public class StockManager {
 
     public List<Productos> getStock(){
         return stock;
+    }
+
+    public String muestraProducto(){
+        StringBuilder sb = new StringBuilder();
+        for(Productos producto : stock){
+            sb.append(producto.toString()).append("\n");
+        }
+        return sb.toString();
     }
 
 
